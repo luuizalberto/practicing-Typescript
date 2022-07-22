@@ -22,6 +22,10 @@ class User extends Person{
         return n1 + n2
     }
 
+    aplicarEstilo(){ // usando tambem objetos o javascript
+        document.getElementById("el").style.color = "red"
+    }
+
 }
 
 
@@ -38,3 +42,5 @@ console.log(pessoa.printName());
 var usuario = new User("Lari")
 console.log(usuario.printName());
 console.log(usuario.somar(15,10));
+
+new User('gui').aplicarEstilo()

@@ -30,6 +30,9 @@ var User = /** @class */ (function (_super) {
     User.prototype.somar = function (n1, n2) {
         return n1 + n2;
     };
+    User.prototype.aplicarEstilo = function () {
+        document.getElementById("el").style.color = "red";
+    };
     return User;
 }(Person));
 // Classe Person
@@ -42,3 +45,4 @@ console.log(pessoa.printName());
 var usuario = new User("Lari");
 console.log(usuario.printName());
 console.log(usuario.somar(15, 10));
+new User('gui').aplicarEstilo();
